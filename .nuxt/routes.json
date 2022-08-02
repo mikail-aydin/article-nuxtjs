@@ -1,0 +1,44 @@
+[
+  {
+    "name": "admin",
+    "path": "/admin",
+    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs-project\\\\pages\\\\admin\\\\index.vue",
+    "chunkName": "pages/admin/index",
+    "_name": "_358852e2"
+  },
+  {
+    "name": "posts",
+    "path": "/posts",
+    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs-project\\\\pages\\\\posts\\\\index.vue",
+    "chunkName": "pages/posts/index",
+    "_name": "_0a63c044"
+  },
+  {
+    "name": "admin-new-post",
+    "path": "/admin/new-post",
+    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs-project\\\\pages\\\\admin\\\\new-post.vue",
+    "chunkName": "pages/admin/new-post",
+    "_name": "_6a36054d"
+  },
+  {
+    "name": "admin-postId",
+    "path": "/admin/:postId",
+    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs-project\\\\pages\\\\admin\\\\_postId\\\\index.vue",
+    "chunkName": "pages/admin/_postId/index",
+    "_name": "_062ea638"
+  },
+  {
+    "name": "posts-postId",
+    "path": "/posts/:postId",
+    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs-project\\\\pages\\\\posts\\\\_postId\\\\index.vue",
+    "chunkName": "pages/posts/_postId/index",
+    "_name": "_5cf9b4bc"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs-project\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_451219a3"
+  }
+]
