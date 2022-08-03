@@ -2,43 +2,43 @@
   {
     "name": "admin",
     "path": "/admin",
-    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs-project\\\\pages\\\\admin\\\\index.vue",
+    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs\\\\pages\\\\admin\\\\index.vue",
     "chunkName": "pages/admin/index",
-    "_name": "_358852e2"
+    "_name": "_2a3032ae"
   },
   {
     "name": "posts",
     "path": "/posts",
-    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs-project\\\\pages\\\\posts\\\\index.vue",
+    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs\\\\pages\\\\posts\\\\index.vue",
     "chunkName": "pages/posts/index",
-    "_name": "_0a63c044"
+    "_name": "_211400ac"
   },
   {
     "name": "admin-new-post",
     "path": "/admin/new-post",
-    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs-project\\\\pages\\\\admin\\\\new-post.vue",
+    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs\\\\pages\\\\admin\\\\new-post.vue",
     "chunkName": "pages/admin/new-post",
-    "_name": "_6a36054d"
+    "_name": "_45ea8201"
   },
   {
     "name": "admin-postId",
     "path": "/admin/:postId",
-    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs-project\\\\pages\\\\admin\\\\_postId\\\\index.vue",
+    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs\\\\pages\\\\admin\\\\_postId\\\\index.vue",
     "chunkName": "pages/admin/_postId/index",
-    "_name": "_062ea638"
+    "_name": "_0177cbec"
   },
   {
     "name": "posts-postId",
     "path": "/posts/:postId",
-    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs-project\\\\pages\\\\posts\\\\_postId\\\\index.vue",
+    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs\\\\pages\\\\posts\\\\_postId\\\\index.vue",
     "chunkName": "pages/posts/_postId/index",
-    "_name": "_5cf9b4bc"
+    "_name": "_5842da70"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs-project\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\Aydın\\\\Desktop\\\\article-nuxtjs\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_451219a3"
+    "_name": "_6ea52757"
   }
 ]
