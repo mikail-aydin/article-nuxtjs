@@ -19,7 +19,7 @@ const createStore = () => {
         },
         actions: {
             nuxtServerInit(vuexContext, context) {
-                return axios.get("https://article-nuxtjs-project-test-default-rtdb.firebaseio.com/posts.json")
+                return context.app.$axios.get(process.env.baseURL + "posts.json")
                     .then(response => {
                         let data = response.data;
                         let postArray = []
@@ -33,16 +33,16 @@ const createStore = () => {
                 vuexContext.commit("setPosts", posts)
             },
             addPost(vuexContext, post) {
-                return axios
-                    .post("https://article-nuxtjs-project-test-default-rtdb.firebaseio.com/posts.json", post)
+                return this.$axios
+                    .post(process.env.baseURL + "posts.json", post)
                     .then((response) => {
                         vuexContext.commit("addPost", { ...post, id: response.data.name })
                     });
             },
             updatePost(vuexContext, editedPost) {
-                return axios
+                return this.$axios
                     .put(
-                        "https://article-nuxtjs-project-test-default-rtdb.firebaseio.com/posts/" + editedPost.id + ".json", editedPost)
+                        process.env.baseURL + "posts/" + editedPost.id + ".json", editedPost)
                     .then((response) => {
                         vuexContext.commit("updatePost", editedPost)
                     })

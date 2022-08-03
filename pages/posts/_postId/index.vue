@@ -10,11 +10,7 @@ export default {
   },
   asyncData(context) {
     return axios
-      .get(
-        "https://article-nuxtjs-project-test-default-rtdb.firebaseio.com/posts/" +
-          context.params.postId +
-          ".json"
-      )
+      .get(process.env.baseURL + "posts/" + context.params.postId + ".json")
       .then((response) => {
         return {
           fetchedPost: response.data,

@@ -13,6 +13,9 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
+import nuxt_plugin_axios_609cb26f from 'nuxt_plugin_axios_609cb26f' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_Components_ff2b896a from 'nuxt_plugin_Components_ff2b896a' // Source: ..\\plugins\\Components.js (mode: 'all')
+
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
 
@@ -51,7 +54,7 @@ Object.defineProperty(Vue.prototype, '$nuxt', {
 
 Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
 
-const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
+const defaultTransition = {"name":"layout","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
 const originalRegisterModule = Vuex.Store.prototype.registerModule
 
@@ -79,7 +82,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"article-project","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My best Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Home","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My best Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Fbootswatch.com\u002F4\u002Fsketchy\u002Fbootstrap.min.css"}],"style":[],"script":[]},
 
     store,
     router,
@@ -207,6 +210,14 @@ async function createApp(ssrContext, config = {}) {
     }
   }
   // Plugin execution
+
+  if (typeof nuxt_plugin_axios_609cb26f === 'function') {
+    await nuxt_plugin_axios_609cb26f(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_Components_ff2b896a === 'function') {
+    await nuxt_plugin_Components_ff2b896a(app.context, inject)
+  }
 
   // Lock enablePreview in context
   if (process.static && process.client) {
